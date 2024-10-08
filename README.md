@@ -11,4 +11,4 @@ Destinado en aquellos que desean ir más allá de las apps bancarias básicas y 
 - **Subcuentas**: Crea subcuentas para dividir el saldo según diferentes factores.
 - **Subcuenta Objetivo**: Establece metas de ahorro y visualiza el progreso hacia su cumplimiento.
 
-   git clone https://github.com/migncc/gestor-finanzas.git
+   
