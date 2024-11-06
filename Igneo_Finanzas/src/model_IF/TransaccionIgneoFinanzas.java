@@ -8,6 +8,6 @@ package model_IF;
  *
  * @author ignac
  */
-public class Cuenta {
+public class TransaccionIgneoFinanzas {
     
 }
