@@ -4,10 +4,22 @@
  */
 package igneo_finanzas;
 
+import controller_IF.IgneoFinanzasController;
+import model_IF.ModeloIgneoFinanzas;
+import view_IF.VistaInicialgneoFinanzas;
+
 /**
  *
  * @author ignac
  */
 public class IgneoFinanzasMain {
     
+    public static void main(String[] args) {
+        ModeloIgneoFinanzas modeloIF = new ModeloIgneoFinanzas();
+        VistaInicialgneoFinanzas vistaIF = new VistaInicialgneoFinanzas();
+        IgneoFinanzasController controllerIF = new IgneoFinanzasController(vistaIF, modeloIF);
+        System.out.println("iniciando programa...");
+        System.out.println("App iniciada");
+        
+    }
 }

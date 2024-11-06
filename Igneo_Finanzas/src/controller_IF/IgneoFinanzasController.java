@@ -4,7 +4,8 @@
  */
 package controller_IF;
 
-import model_IF.CuentaIgenoFinanzas;
+
+import model_IF.ModeloIgneoFinanzas;
 import view_IF.VistaInicialgneoFinanzas;
 
 /**
@@ -12,12 +13,16 @@ import view_IF.VistaInicialgneoFinanzas;
  * @author ignac
  */
 public class IgneoFinanzasController {
-    private VistaInicialgneoFinanzas view; // Atributo para la vista
-    private CuentaIgenoFinanzas cuenta;  // Atributo para la cuenta
+    private VistaInicialgneoFinanzas viewIF; // Atributo para la vista
+    private ModeloIgneoFinanzas modeloIF;  // Atributo para la cuenta
 
-    public IgneoFinanzasController(VistaInicialgneoFinanzas view) {
-        this.view = view;
-        this.cuenta = new CuentaIgenoFinanzas(); // Inicializa la cuenta
+    public IgneoFinanzasController(VistaInicialgneoFinanzas viewIF, ModeloIgneoFinanzas modeloIF ) {
+        this.viewIF = viewIF;
+        this.modeloIF = modeloIF;
+        initControladorIF(); //metodo que iniciaria
     }
-
+ private void initControladorIF(){
+     viewIF.setVisible(true); // de momento iniciar la pantalla mainframe
+ }
+    
 }
