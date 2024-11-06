@@ -1,0 +1,15 @@
+Seguimiento del proyecto:
+Control de avances y ruta de desarrollo.
+###
+Sólo el profesor actuará únicamente sobre este archivo, del resto del proyecto.
+No modificar ni borrar este archivo, ya que equivale a puntuar el proyecto con 0.
+###
+
+1º modificación:
+Ok, licencia y README.md.
+No usar Maven, sólo Java con Swing.
+No es una estructuta funcional MVC con 4 ficheros.
+No hay label.
+-> Corrige las carencias y en el label inserta una imagen donde "pintes" el look de como sería la ventana principal.
+-> Refactoriza (cambia) los nombres de todas las clases y objetos que uses de forma que sean exclusivos tuyos y del proyecto (en el futuro no evaluaré nada con nombres genéricos automatizados).
+En principio puedes dejar las clases de "modelo"
