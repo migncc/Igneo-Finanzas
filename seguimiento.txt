@@ -13,3 +13,9 @@ No hay label.
 -> Corrige las carencias y en el label inserta una imagen donde "pintes" el look de como sería la ventana principal.
 -> Refactoriza (cambia) los nombres de todas las clases y objetos que uses de forma que sean exclusivos tuyos y del proyecto (en el futuro no evaluaré nada con nombres genéricos automatizados).
 En principio puedes dejar las clases de "modelo"
+
+2º modificación:
+Elimina la imagen (en el sentido de ser usada guía del look), y debes tener 3 ventanas (la tercera es el JDialog):
+1-> presentación, no redimensionable (tamaño mediano), simulando la carga, y desaparece por tiempo.
+2-> Salta la principal, donde tus 2 botoneras laterales serán funcionales en el sentido de mandar un mensaje por consola, y usar el botón "configuración" con un JDialog modificado. Donde los cambios del look y los usuarios del sistema, y debe poder cargar los datos guardados en el arranque.
+Todo los métodos y clases documentados.
