@@ -4,6 +4,11 @@
  */
 package view_IF;
 
+import java.awt.Dimension;
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.JButton;
+
 /**
  *
  * @author ignac
@@ -15,6 +20,11 @@ public class VistaInicialgneoFinanzas extends javax.swing.JFrame {
      */
     public VistaInicialgneoFinanzas() {
         initComponents();
+        setLocationRelativeTo(null); // Centrar en pantalla
+        panelDerecho.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+        panelDerecho.add(Box.createRigidArea(new Dimension(0, 10)));
+// Padding: top, left, bottom, right
+
     }
 
     /**
@@ -27,52 +37,67 @@ public class VistaInicialgneoFinanzas extends javax.swing.JFrame {
     private void initComponents() {
 
         etqIdea = new javax.swing.JLabel();
+        panelDerecho = new javax.swing.JPanel();
+        btnCrearSubcuenta = new javax.swing.JButton();
+        btnEliminarSubcuenta = new javax.swing.JButton();
+        panelizq = new javax.swing.JPanel();
+        btnConfiguracion = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         etqIdea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view_IF/Imagen menu principal.png"))); // NOI18N
         getContentPane().add(etqIdea, java.awt.BorderLayout.CENTER);
 
+        panelDerecho.setLayout(new javax.swing.BoxLayout(panelDerecho, javax.swing.BoxLayout.Y_AXIS));
+
+        btnCrearSubcuenta.setText("Crear Subcuenta");
+        panelDerecho.add(btnCrearSubcuenta);
+
+        btnEliminarSubcuenta.setText("Eliminar Subcuenta");
+        btnEliminarSubcuenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarSubcuentaActionPerformed(evt);
+            }
+        });
+        panelDerecho.add(btnEliminarSubcuenta);
+
+        getContentPane().add(panelDerecho, java.awt.BorderLayout.LINE_END);
+
+        panelizq.setLayout(new javax.swing.BoxLayout(panelizq, javax.swing.BoxLayout.LINE_AXIS));
+
+        btnConfiguracion.setText("Configuracion");
+        panelizq.add(btnConfiguracion);
+
+        getContentPane().add(panelizq, java.awt.BorderLayout.LINE_START);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(VistaInicialgneoFinanzas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(VistaInicialgneoFinanzas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(VistaInicialgneoFinanzas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(VistaInicialgneoFinanzas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
+    private void btnEliminarSubcuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarSubcuentaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarSubcuentaActionPerformed
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new VistaInicialgneoFinanzas().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnConfiguracion;
+    private javax.swing.JButton btnCrearSubcuenta;
+    private javax.swing.JButton btnEliminarSubcuenta;
     private javax.swing.JLabel etqIdea;
+    private javax.swing.JPanel panelDerecho;
+    private javax.swing.JPanel panelizq;
     // End of variables declaration//GEN-END:variables
+
+//mis variables y metodos: 
+    public JButton getBtnCrearSubcuenta() {
+        return btnCrearSubcuenta;
+    }
+
+    public JButton getBtnEliminarSubcuenta() {
+        return btnEliminarSubcuenta;
+    }
+
+    public JButton getBtnConfiguracion() {
+        return btnConfiguracion;
+    }
+
 }
